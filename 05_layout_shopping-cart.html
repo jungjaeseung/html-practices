@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>table</title>
+    <link rel="stylesheet" href="css/layout_shopping-cart.css" />
+  </head>
+  <body>
+    <div id="root">
+      <div class="container">
+        <div class="title__shopping-cart"><h1>Your shopping cart</h1></div>
+        <div class="shopping-list">
+          <table class="table__shopping-list">
+            <thead>
+              <tr>
+                <td><span>ITEM</span></td>
+                <td><span>AMOUNT</span></td>
+                <td><span>PRICE</span></td>
+                <td><span>TOTAL</span></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <img src="img/shopping-1.png" />
+                  <div>
+                    <h4>SONY</h4>
+                    <span>FE 70-200 mm F2.8 GM OSS</span>
+                  </div>
+                </td>
+                <td><span>1</span></td>
+                <td><span>€ 1979.00</span></td>
+                <td>€ 1979.00</td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="img/shopping-2.png" />
+                  <div>
+                    <h4>SONY</h4>
+                    <span>Sonnar T* E 24mm F1.8 ZA</span>
+                  </div>
+                </td>
+                <td><span>1</span></td>
+                <td><span>€ 989.00</span></td>
+                <td>€ 989.00</td>
+              </tr>
+              <tr>
+                <td colspan="2">€ 2968.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="last__shopping-cart">
+          <div class="shopping-cart--column">
+            <a href="#">Edit your shopping cart</a>
+          </div>
+          <div class="shopping-cart--column">
+            <button id="buy-button">Choose payment method</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
