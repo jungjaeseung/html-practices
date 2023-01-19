@@ -175,6 +175,22 @@ h1 {
     padding: 30px 0px;
   }
   .overlay-black {
+    padding: 2px;
+  }
+  .shop-bg {
+    padding: 2px;
+  }
+  .shop-container {
+    min-width: auto;
+    width: 90%;
+  }
+  .shop-item {
     padding: 5px;
+  }
+  .overlay-black span {
+    font-size: 13px;
+  }
+  .overlay-black span:nth-child(2) {
+    font-size: 8px;
   }
 }
