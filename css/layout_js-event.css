@@ -1,0 +1,86 @@
+.dark {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+button {
+  border: none;
+}
+.alert-box {
+  background-color: skyblue;
+  padding: 20px;
+  color: white;
+  border-radius: 5px;
+  display: none;
+}
+.show {
+  display: block;
+}
+.btn-red {
+  background-color: tomato;
+  border: none;
+}
+.black-bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  padding: 30px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.25s ease-in;
+}
+
+.white-bg {
+  width: 95%;
+  top: -140px;
+  position: fixed;
+  background: white;
+  border-radius: 5px;
+  padding: 30px;
+  transition: all 0.25s ease-in;
+}
+.show-modal {
+  visibility: visible;
+  opacity: 1;
+}
+.show-modal > .white-bg {
+  top: 30px;
+}
+
+.list-group {
+  height: 0px;
+  visibility: hidden;
+  transition: all 0.5s ease-in;
+  overflow: hidden;
+}
+.show-list {
+  visibility: visible;
+  height: 212px;
+}
+.main-bg {
+  padding: 30px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.badge {
+  margin-right: 15px;
+}
+.font-black {
+  color: black;
+}
+.question-container {
+  width: fit-content;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 30px;
+}
+#send-answer {
+  background-color: tomato;
+  border-radius: 5px;
+  color: white;
+}
