@@ -39,7 +39,7 @@ button {
 
 .white-bg {
   width: 95%;
-  top: -140px;
+  top: 300px;
   position: fixed;
   background: white;
   border-radius: 5px;
@@ -49,9 +49,6 @@ button {
 .show-modal {
   visibility: visible;
   opacity: 1;
-}
-.show-modal > .white-bg {
-  top: 30px;
 }
 
 .list-group {

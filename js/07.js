@@ -138,7 +138,6 @@ function 함수(num, isFirst) {
 }
 
 window.addEventListener("scroll", function () {
-  console.log(this.window.scrollY);
   if (this.window.scrollY >= 100) {
     $(".navbar-brand").css("font-size", "16px");
     $("body").css("padding-top", "56px");
@@ -155,4 +154,7 @@ $(".lorem").on("scroll", function () {
   ) {
     $(".all-read").css("visibility", "visible");
   }
+});
+$(".black-bg").on("click", function () {
+  $(".black-bg").toggleClass("show-modal");
 });
