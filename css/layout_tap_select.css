@@ -31,6 +31,9 @@ ul.list::after {
   display: none;
   padding: 10px;
 }
+.form-select {
+  display: none;
+}
 .show {
   display: block;
 }

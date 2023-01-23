@@ -155,6 +155,8 @@ $(".lorem").on("scroll", function () {
     $(".all-read").css("visibility", "visible");
   }
 });
-$(".black-bg").on("click", function () {
-  $(".black-bg").toggleClass("show-modal");
+$(".black-bg").on("click", function (e) {
+  if (e.target == this) {
+    $(".black-bg").toggleClass("show-modal");
+  }
 });
