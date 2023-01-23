@@ -1,3 +1,9 @@
+:root {
+  scroll-behavior: auto;
+}
+body {
+  padding-top: 66.5px;
+}
 .dark {
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
@@ -53,6 +59,10 @@ button {
   visibility: hidden;
   transition: all 0.5s ease-in;
   overflow: hidden;
+  position: fixed;
+  width: 50%;
+  right: 0;
+  z-index: 4;
 }
 .show-list {
   visibility: visible;
@@ -83,4 +93,76 @@ button {
   background-color: tomato;
   border-radius: 5px;
   color: white;
+}
+.slide-div {
+  overflow-x: hidden;
+  position: relative;
+}
+.slide-container {
+  width: 300vw;
+  transition: all 1s ease-in-out;
+}
+.slide-box {
+  width: 100vw;
+  float: left;
+}
+.slide-box img {
+  width: 100%;
+}
+
+.side-button-container {
+  position: absolute;
+  z-index: 2;
+}
+.side-button-con-left {
+  left: 5px;
+  top: 50%;
+}
+.side-button-con-right {
+  right: 5px;
+  top: 50%;
+}
+.side-button {
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 50%;
+  border: none;
+}
+.bottom-buttons {
+  position: absolute;
+  bottom: 0px;
+  left: 45%;
+}
+.bottom-button {
+  padding: 3px 10px;
+  border-radius: 50%;
+}
+.slide-1 {
+  background-color: tomato;
+}
+.slide-2,
+.slide-3 {
+  background-color: gray;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+}
+.navbar-brand {
+  font-size: 27px;
+}
+.lorem-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.all-read {
+  background-color: rgba(0, 0, 0, 0.05);
+  margin-left: 30px;
+  padding: 10px 20px;
+  visibility: hidden;
 }
