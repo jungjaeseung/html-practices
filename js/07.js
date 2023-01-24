@@ -149,8 +149,8 @@ window.addEventListener("scroll", function () {
 $(".lorem").on("scroll", function () {
   if (
     document.querySelector(".lorem").scrollTop +
-      document.querySelector(".lorem").clientHeight ==
-    document.querySelector(".lorem").scrollHeight - 2
+      document.querySelector(".lorem").clientHeight >=
+    document.querySelector(".lorem").scrollHeight - 10
   ) {
     $(".all-read").css("visibility", "visible");
   }
