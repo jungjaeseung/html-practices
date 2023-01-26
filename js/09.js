@@ -66,41 +66,45 @@ $("#more").on("click", function () {
 });
 
 $("#sort-btn").on("click", function () {
-  isSorted = true;
-  isLetterSorted = false;
-  $(".row").html("");
-  let newProducts = [...products];
-  const sortedArr = newProducts.sort((a, b) => a.price - b.price);
-  createForm(sortedArr);
-  for (let i = 0; i < clickedCount; i++) {
-    createSortedProducts(getUrls[i], "price");
+  if (isSorted === false) {
+    isSorted = true;
+    isLetterSorted = false;
+    $(".row").html("");
+    let newProducts = [...products];
+    const sortedArr = newProducts.sort((a, b) => a.price - b.price);
+    createForm(sortedArr);
+    for (let i = 0; i < clickedCount; i++) {
+      createSortedProducts(getUrls[i], "price");
+    }
+    $("#sort-btn").html("정렬완료");
+    $("#sort-btn").removeClass("btn-danger");
+    $("#sort-btn").addClass("btn-secondary");
+    $("#sort-btn2").html("글자순정렬");
+    $("#sort-btn2").addClass("btn-danger");
+    $("#sort-btn2").removeClass("btn-secondary");
   }
-  $("#sort-btn").html("정렬완료");
-  $("#sort-btn").removeClass("btn-danger");
-  $("#sort-btn").addClass("btn-secondary");
-  $("#sort-btn2").html("글자순정렬");
-  $("#sort-btn2").addClass("btn-danger");
-  $("#sort-btn2").removeClass("btn-secondary");
 });
 
 $("#sort-btn2").on("click", function () {
-  isLetterSorted = true;
-  isSorted = false;
-  $(".row").html("");
-  let newProducts = [...products];
-  const sortedArr = newProducts.sort((a, b) =>
-    a.title < b.title ? -1 : a.title > b.title ? 1 : 0
-  );
-  createForm(sortedArr);
-  for (let i = 0; i < clickedCount; i++) {
-    createSortedProducts(getUrls[i], "title");
+  if (isLetterSorted === false) {
+    isLetterSorted = true;
+    isSorted = false;
+    $(".row").html("");
+    let newProducts = [...products];
+    const sortedArr = newProducts.sort((a, b) =>
+      a.title < b.title ? -1 : a.title > b.title ? 1 : 0
+    );
+    createForm(sortedArr);
+    for (let i = 0; i < clickedCount; i++) {
+      createSortedProducts(getUrls[i], "title");
+    }
+    $("#sort-btn").html("가격낮은순");
+    $("#sort-btn").addClass("btn-danger");
+    $("#sort-btn").removeClass("btn-secondary");
+    $("#sort-btn2").html("정렬완료");
+    $("#sort-btn2").removeClass("btn-danger");
+    $("#sort-btn2").addClass("btn-secondary");
   }
-  $("#sort-btn").html("가격낮은순");
-  $("#sort-btn").addClass("btn-danger");
-  $("#sort-btn").removeClass("btn-secondary");
-  $("#sort-btn2").html("정렬완료");
-  $("#sort-btn2").removeClass("btn-danger");
-  $("#sort-btn2").addClass("btn-secondary");
 });
 
 $("#sort-btn3").on("click", function () {
