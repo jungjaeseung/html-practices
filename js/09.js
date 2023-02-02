@@ -12,12 +12,15 @@ let getUrls = [
   "https://codingapple1.github.io/js/more2.json",
 ];
 
+localStorage.setItem("product", "a");
+
 function createForm(dataArr) {
   dataArr.forEach(function (data) {
     const div_layout = `<div class="col-sm-4">
     <img src="img/product1.jpg" class="w-100" />
     <h5>${data["title"]}</h5>
     <p>가격 : ${data["price"]}</p>
+    <button class="buy">구매</button>
   </div>`;
     $(".row").append(div_layout);
   });
